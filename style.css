@@ -1,5 +1,10 @@
 body {
-    margin: 0 3%;
+    margin: 0 4%;
+    font-size: 18px;
+}
+
+main {
+    margin: 10px 0;
 }
 
 .container {
@@ -16,44 +21,93 @@ body {
       "credit"
       "contact";
 }
-  
-.serv2 {
-    grid-area: serv2;
-    background-color: blue;
-}
-  
+
 .serv1 {
     grid-area: serv1;
-    background-color: red;
 }
-  
+
+.serv2 {
+    grid-area: serv2;
+}
+
 .serv3 {
     grid-area: serv3;
-    background-color: yellow;
 }
-  
+
 .serv4 {
     grid-area: serv4;
-    background-color: green;
 }
-  
+
+.serv1, .serv2, .serv3, .serv4 {
+    background-color: #fef2e4;
+}
+
 .credit {
     grid-area: credit;
-    background-color: orange;
 }
-  
+
 .contact {
     grid-area: contact;
-    background-color: pink;
+    background-color: #fad27a;
+}
+
+.block {
+    border-radius: 20px;
+}
+
+.block, .contact {
+    padding: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.contact img {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.contact a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #cf3721;
+}
+
+.separator {
+    display: block;
+    margin: 10px auto;
+    height: 2px;
+    width: 250px;
+    border-radius: 20%;
+    background-color: #cf3721;
 }
 
 /* TABLET */
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 550px) {
     
     body {
-        margin: 0 4%;
+        margin: 0 5%;
+        font-size: 20px;
+    }
+
+    main {
+        margin: 20px 0;
     }
 
     .container {
@@ -66,15 +120,20 @@ body {
           "serv3 contact"
           "serv4 contact";
     }
+
+    .separator {
+        height: 3px;
+        margin: 20px auto;
+    }
       
 }
 
 /* DESKTOP */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     
     body {
-        margin: 0 5%;
+        margin: 0 6%;
     }
 
     .container {
@@ -84,5 +143,15 @@ body {
         "serv1 serv2 contact"
         "serv3 serv4 contact"
         "credit credit contact";
+    }
+}
+
+/* LARGE SCREENS */
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
     }
 }
