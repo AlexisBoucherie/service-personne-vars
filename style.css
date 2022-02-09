@@ -1,0 +1,88 @@
+body {
+    margin: 0 3%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "serv1"
+      "serv2"
+      "serv3"
+      "serv4"
+      "credit"
+      "contact";
+}
+  
+.serv2 {
+    grid-area: serv2;
+    background-color: blue;
+}
+  
+.serv1 {
+    grid-area: serv1;
+    background-color: red;
+}
+  
+.serv3 {
+    grid-area: serv3;
+    background-color: yellow;
+}
+  
+.serv4 {
+    grid-area: serv4;
+    background-color: green;
+}
+  
+.credit {
+    grid-area: credit;
+    background-color: orange;
+}
+  
+.contact {
+    grid-area: contact;
+    background-color: pink;
+}
+
+/* TABLET */
+
+
+@media screen and (min-width: 480px) {
+    
+    body {
+        margin: 0 4%;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+        "serv1 credit"
+          "serv2 contact"
+          "serv3 contact"
+          "serv4 contact";
+    }
+      
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+    
+    body {
+        margin: 0 5%;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "serv1 serv2 contact"
+        "serv3 serv4 contact"
+        "credit credit contact";
+    }
+}
