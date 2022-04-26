@@ -1,6 +1,11 @@
 body {
     margin: 0 4%;
     font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1, h2 {
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 main {
@@ -216,6 +221,12 @@ nav a {
     height: 5vh;
     padding: 10px;
     margin: 10px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
 }
 
 /* TABLET */
