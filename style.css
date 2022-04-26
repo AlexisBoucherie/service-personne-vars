@@ -73,6 +73,12 @@ img {
     margin: 0 auto;
 }
 
+.credit img {
+    margin: 10px auto;
+    background-color: #fad27a;
+    border-radius: 50%;
+}
+
 .contact img {
     margin-top: 10px;
     width: 150px;
