@@ -10,7 +10,7 @@ main {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -53,6 +53,7 @@ main {
 
 .block {
     border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .block, .contact {
@@ -91,9 +92,74 @@ img {
     display: block;
     margin: 10px auto;
     height: 2px;
-    width: 250px;
-    border-radius: 20%;
+    width: 50%;
     background-color: #cf3721;
+}
+
+/* formulaire */
+
+form {
+    margin: 0 auto;
+    width: 90%;
+}
+
+form h2 {
+    color: #cf3721;
+}
+
+
+label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 5em;
+}
+
+.radio {
+    width: 50%;
+    display: flex;
+    text-align: left;
+}
+
+.radio input {
+    width: 1em;
+    height: 1em;
+}
+
+.radio label {
+    margin-left: 10px;
+    line-height: 1em;
+}
+
+.gender{
+    margin-bottom: 10px;
+}
+
+.aster {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+button {
+    width: 100%;
+    height: 6vh;
+    background-color: #cf3721;
+    color: #fff;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: 2px solid #cf3721;
+    border-radius: 20px;
 }
 
 /* TABLET */
@@ -143,6 +209,11 @@ img {
         "serv1 serv2 contact"
         "serv3 serv4 contact"
         "credit credit contact";
+    }
+
+    button:hover {
+        background-color: #a43625;
+        border: 2px solid #cf3721;
     }
 }
 
