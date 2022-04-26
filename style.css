@@ -53,6 +53,7 @@ main {
 
 .block {
     border-radius: 20px;
+    margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
 }
 
@@ -96,7 +97,7 @@ img {
 
 .separator {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     height: 2px;
     width: 50%;
     background-color: #cf3721;
@@ -168,6 +169,55 @@ button {
     border-radius: 20px;
 }
 
+/* header */
+
+header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+header img {
+    margin: 10px 0 0 10px;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #cf3721;
+    font-size: 1.5em;
+}
+
+/* menu */
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 5vh;
+    height: 5vh;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #cf3721;
+    color: #fff;
+    border-radius: 10px;
+    height: 5vh;
+    padding: 10px;
+    margin: 10px;
+}
+
 /* TABLET */
 
 
@@ -196,6 +246,10 @@ button {
     .separator {
         height: 3px;
         margin: 20px auto;
+    }
+
+    nav {
+        display: none;
     }
       
 }
