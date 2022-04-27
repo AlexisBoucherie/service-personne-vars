@@ -78,22 +78,23 @@
                 <span class="separator"></span>
                 
                 <!-- formulaire de contact -->
-                <form action="???" method="post">
+                <form action="script.php" method="post">
                     <h2>Demandez votre devis :</h2>
+                    <p class="warning"><?php $message ?></p>
                     <div class="gender">
                         <p>Civilité</p>
                         <div class="radio">
-                            <input type="radio" id="mister" name="gender" value="mister" checked>
+                            <input type="radio" id="mister" name="user_gender" value="mister">
                             <label for="mister">Monsieur</label>
                         </div>
                         <div class="radio">
-                            <input type="radio" id="miss" name="gender" value="miss">
+                            <input type="radio" id="miss" name="user_gender" value="miss">
                             <label for="miss">Madame</label>
                         </div>
                     </div>
                     <div>
                         <label for="lastname">Nom *</label>
-                        <input type="text" id="lastname" name="user_lastname" required>
+                        <input type="text" id="lastname" name="user_lastname"> <!-- required -->
                     </div>
                     <div>
                         <label for="firstname">Prénom</label>
@@ -109,7 +110,7 @@
                     </div>
                     <div>
                         <label for="phone">Numéro de téléphone *</label>
-                        <input type="text" id="phone" name="user_phone" required>
+                        <input type="text" id="phone" name="user_phone"> <!-- required -->
                     </div>
                     <div>
                         <label for="msg">Votre message</label>
