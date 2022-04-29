@@ -1,5 +1,5 @@
-# robots.txt
-# Tell Google not to crawl any URLs images in the icons folder,
+# service-personne-vars/robots.txt
+# Tell Google not to crawl in the images folder,
 # because they won't be useful in Google Search results.
 User-agent: googlebot
 Disallow: /img/
