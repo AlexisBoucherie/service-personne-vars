@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basée à Vars (16), je vous aide dans vos démarches administratives, vous accompagne dans vos déplacements, cuisine pour vous ou encore vous fais le repassage.">
     <title>Service à la personne | Vars (16) et alentours</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,15 +43,15 @@
                 <h2>Repassage</h2>
                 <img src="img/iron.png">
                 <ul>
-                    <li>Collecte de linge propre</li>
-                    <li>Livraison à domicile du linge repassé</li>
+                    <li>Collecte de linge à domicile</li>
+                    <li>Livraison du linge repassé</li>
                 </ul>
             </div>
             <div class="serv4 block">
                 <h2>Accompagnement</h2>
                 <img src="img/calendar.png">
                 <ul>
-                    <li>Accompagnement des personnes en situation d’invalidité temporaire ou non (RDV médicaux,  coiffeur, courses...)</li>
+                    <li>Accompagnement des personnes en situation d’invalidité temporaire (RDV médicaux, coiffeur, courses...)</li>
                 </ul>
             </div>
 
@@ -58,7 +59,7 @@
             <div class="credit">
                 <h2>Crédit d'impôt : services et emploi à domicile</h2>
                 <img src="img/creditdimpot.png" alt="Crédit d'impôt, -50% !">
-                <p>bénéficiez d'un crédit d'impôt de 50% sur le montant de la facture.</p>
+                <p>Bénéficiez d'un crédit d'impôt de 50% sur le montant de la facture.</p>
                 <p class="aster">>> Plus de renseignements sur le <a href="https://www.service-public.fr/particuliers/vosdroits/F12">site officiel du service public</a> (service-public.fr).</p>
             </div>
 
