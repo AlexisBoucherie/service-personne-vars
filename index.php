@@ -18,8 +18,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="index.php#services">Services</a></li>
+                <li><a href="index.php#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -117,6 +117,7 @@
                     <div class="button">
                         <button type="submit" name="submit">Envoyer</button>
                     </div>
+                    <p class="aster">En cliquant sur "Envoyer", vous consentez à ce que les informations fournies soient utilisées afin de pouvoir vous recontacter * (voir pied de page).</p>
                     
                     <?php
                         //on récupère l'URL
@@ -132,15 +133,19 @@
                             echo '<p class="warning">Merci de bien vouloir renseigner au moins votre nom et votre numéro de téléphone, afin que je puisse vous recontacter !</p>';
                         }
                     ?>
+
                 </form>
             </div>
           </div>
     </main>
     <footer>
+        <p>* Service à la personne, Vars (16), traite les données recueillies afin de pouvoir vous recontacter.<br>
+        Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à <a href="rgpd.html">la notice ci-jointe</a>.</p>
+        
         <p>Numéro SIRET : 888 206 745 00018</p>
+        
+        <p>Icônes du site fournies gratuitement par <a href="http://www.flaticon.com">Flaticon</a></p>
         <p>2022 - Site web réalisé par Alexis Boucherie</p>
-        <!-- RGPD formulaire > se renseigner
-        Tribute to Flaticon for icons -->
     </footer>
 </body>
 </html>

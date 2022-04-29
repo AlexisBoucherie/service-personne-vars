@@ -237,6 +237,32 @@ nav a {
 
 footer {
     text-align: center;
+    font-size: 0.8em;
+}
+
+/* rgpd */
+
+.rgpd {
+    text-align: justify;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.back {
+    display: block;
+    width: 20vw;
+    margin: 20px auto;
+    background-color: #cf3721;
+    border-radius: 10px;
+}
+
+.back a {
+    text-align: center;
+    display: block;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* TABLET */
@@ -295,6 +321,11 @@ footer {
     button:hover {
         background-color: #a43625;
         border: 2px solid #cf3721;
+    }
+
+    .back a:hover {
+        background-color: #a43625;
+        border-radius: 10px;
     }
 }
 

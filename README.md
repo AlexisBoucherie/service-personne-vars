@@ -1,1 +1,2 @@
 # service-personne-vars
+Ce site est un site vitrine pour un particulier en microentreprise qui s'occupe de service à la personne en Charente (16). Il est constitué d'une page simple pensée mobile first et permet de contacter le prestataire des services en quelques instants à peine.
