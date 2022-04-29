@@ -7,10 +7,8 @@
     <title>Service à la personne | Vars (16) et alentours</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></head>
 <body>
     <header>
         <img src="img/multitasking.png" alt="Logo">
@@ -58,7 +56,7 @@
                 <h2>Accompagnement</h2>
                 <img src="img/calendar.png">
                 <ul>
-                    <li>Accompagnement des personnes en situation d’invalidité temporaire (RDV médicaux,  coiffeur...)</li>
+                    <li>Accompagnement des personnes en situation d’invalidité temporaire ou non (RDV médicaux,  coiffeur, courses...)</li>
                 </ul>
             </div>
 
@@ -66,7 +64,7 @@
             <div class="credit">
                 <h2>Crédit d'impôt : services et emploi à domicile</h2>
                 <img src="img/creditdimpot.png" alt="Crédit d'impôt, -50% !">
-                <p>Bénéficiez d'une réduction de 50% sur le tarif de nos prestations dans le cadre du crédit d'impôt mis en place par le gouvernement.</p>
+                <p>bénéficiez d'un crédit d'impôt de 50% sur le montant de la facture.</p>
                 <p class="aster">>> Plus de renseignements sur le <a href="https://www.service-public.fr/particuliers/vosdroits/F12">site officiel du service public</a> (service-public.fr).</p>
             </div>
 
@@ -80,15 +78,14 @@
                 <!-- formulaire de contact -->
                 <form action="script.php" method="post">
                     <h2>Demandez votre devis :</h2>
-                    <p class="warning"><?php $message ?></p>
                     <div class="gender">
                         <p>Civilité</p>
                         <div class="radio">
-                            <input type="radio" id="mister" name="user_gender" value="mister">
+                            <input type="radio" id="mister" name="user_gender" value="monsieur">
                             <label for="mister">Monsieur</label>
                         </div>
                         <div class="radio">
-                            <input type="radio" id="miss" name="user_gender" value="miss">
+                            <input type="radio" id="miss" name="user_gender" value="madame">
                             <label for="miss">Madame</label>
                         </div>
                     </div>
@@ -118,8 +115,23 @@
                     </div>
                     <span class="aster">* Les éléments marqués d'un astérisque sont obligatoires</span>
                     <div class="button">
-                        <button type="submit">Envoyer</button>
+                        <button type="submit" name="submit">Envoyer</button>
                     </div>
+                    
+                    <?php
+                        //on récupère l'URL
+                        //enlever le "localhost/" en serveur de production !!
+                        $host = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+                        
+                        // Message affiché si formulaire bien envoyé
+                        if($host == 'localhost/service-personne-vars/index.php?mailsent') {
+                            echo '<p class="success">Votre demande a bien été envoyée. Je reviendrai vers vous très bientôt. Merci !</p>';
+                        }
+                        // Message non valide si champs obligatoires manquants
+                        if($host == 'localhost/service-personne-vars/index.php?unvalid') {
+                            echo '<p class="warning">Merci de bien vouloir renseigner au moins votre nom et votre numéro de téléphone, afin que je puisse vous recontacter !</p>';
+                        }
+                    ?>
                 </form>
             </div>
           </div>

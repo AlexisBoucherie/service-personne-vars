@@ -175,7 +175,13 @@ button {
 }
 
 .warning {
-    color: #a43625;
+    font-weight: bold;
+    color: red;
+}
+
+.success {
+    font-weight: bold;
+    color: green;
 }
 
 /* header */
