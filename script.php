@@ -35,7 +35,7 @@ if(isset($_POST['submit'])) {
     mail($mailTo, "Nouvelle demande pour Service Personne vars", $txt, $headers);
     
     //redirection vers la page principale
-    header("Location: index.php?mailsent");
+    header("Location: https://service-personne-16.herokuapp.com/index.php?mailsent");
 
     $message_unsent = false;
 
@@ -44,7 +44,7 @@ if(isset($_POST['submit'])) {
     //le message n'est pas valide
     $valid = false;
 
-    header("Location: index.php?unvalid");
+    header("Location: https://service-personne-16.herokuapp.com/index.php?unvalid");
 
   }
 }

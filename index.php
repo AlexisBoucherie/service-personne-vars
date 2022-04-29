@@ -121,11 +121,11 @@
                         $host = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
                         
                         // Message affiché si formulaire bien envoyé
-                        if($host == 'localhost/service-personne-vars/index.php?mailsent') {
+                        if($host == 'https://service-personne-16.herokuapp.com/index.php?mailsent') {
                             echo '<p class="success">Votre demande a bien été envoyée. Je reviendrai vers vous très bientôt. Merci !</p>';
                         }
                         // Message non valide si champs obligatoires manquants
-                        if($host == 'localhost/service-personne-vars/index.php?unvalid') {
+                        if($host == 'https://service-personne-16.herokuapp.com/index.php?unvalid') {
                             echo '<p class="warning">Merci de bien vouloir renseigner au moins votre nom et votre numéro de téléphone, afin que je puisse vous recontacter !</p>';
                         }
                     ?>
