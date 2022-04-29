@@ -5,5 +5,5 @@
     <p>Numéro SIRET : 888 206 745 00018</p>
         
     <p>Icônes du site fournies gratuitement par <a href="http://www.flaticon.com">Flaticon</a></p>
-    <p>2022 - Site web réalisé par Alexis Boucherie</p>
+    <p>2022 - Site web réalisé par <a href="https://www.linkedin.com/in/alexis-boucherie/">Alexis Boucherie</a></p>
 </footer>

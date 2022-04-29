@@ -51,7 +51,8 @@
                 <h2>Accompagnement</h2>
                 <img src="img/calendar.png">
                 <ul>
-                    <li>Accompagnement des personnes en situation d’invalidité temporaire (RDV médicaux, coiffeur, courses...)</li>
+                    <li>Accompagnement des personnes en situation d’invalidité temporaire
+                    <br>> RDV médicaux, coiffeur, courses...</li>
                 </ul>
             </div>
 

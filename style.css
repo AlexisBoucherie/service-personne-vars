@@ -56,13 +56,13 @@ main {
     background-color: #fad27a;
 }
 
-.block {
+.block, .credit {
     border-radius: 20px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
 }
 
-.block, .contact {
+.block, .contact, .credit {
     padding: 10px;
 }
 
@@ -77,6 +77,10 @@ img {
     width: 100px;
     height: 100px;
     margin: 0 auto;
+}
+
+.credit {
+    text-align: center;
 }
 
 .credit img {
