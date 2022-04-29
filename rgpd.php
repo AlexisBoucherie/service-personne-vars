@@ -6,21 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service à la personne | RGPD</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="img/multitasking.png" alt="Logo">
-        <div class="title">
-            <h1>Service à la personne</h1>
-            <p>Vars (16) et alentours</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.php#services">Services</a></li>
-                <li><a href="index.php#contacts">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <!-- HEADER -->
+    <?php include_once 'header.php' ?>
+
+    <!-- MAIN -->
     <main>
         <h2>Notice relative au RGPD - Traitement des données personnelles</h2>
         <div class="rgpd">
@@ -44,14 +39,9 @@
             <a href="index.php">Revenir à la page principale</a>
         </div>
     </main>
-    <footer>
-        <p class="aster">* Service à la personne, Vars (16), traite les données recueillies afin de pouvoir vous recontacter.<br>
-        Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à <a href="rgpd.html">la notice ci-jointe</a>.</p>
-        
-        <p>Numéro SIRET : 888 206 745 00018</p>
-        
-        <p>Icônes du site fournies gratuitement par <a href="http://www.flaticon.com">Flaticon</a></p>
-        <p>2022 - Site web réalisé par Alexis Boucherie</p>
-    </footer>
+
+    <!-- FOOTER -->
+    <?php include_once 'footer.php' ?>
+
 </body>
 </html>
