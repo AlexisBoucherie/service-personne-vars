@@ -67,6 +67,9 @@
             <!-- crédit d'impôt -->
             <div class="credit">
                 <div class="align">
+                    <h2>Tarifs :</h2>
+                    <p>20€ de l'heure, sur rendez-vous uniquement</p>
+                    <span class="separator"></span>
                     <h2>Crédit d'impôt : service à la personne</h2>
                     <img src="img/creditdimpot.png" alt="Crédit d'impôt, -50% !">
                     <p>Bénéficiez d'un crédit d'impôt de 50% sur le montant de la facture.</p>
