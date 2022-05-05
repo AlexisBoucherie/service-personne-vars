@@ -193,10 +193,13 @@ button {
 header {
     display: flex;
     margin-bottom: 20px;
+    width: 90vw;
 }
 
 header img {
     margin: 10px 0 0 10px;
+    width: 60px;
+    height: 60px;
 }
 
 .title {
@@ -292,6 +295,11 @@ footer {
           "serv2 contact"
           "serv3 contact"
           "serv4 contact";
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
     }
 
     .separator {
