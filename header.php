@@ -1,5 +1,5 @@
 <header>
-    <img src="img/multitasking.png" alt="Logo">
+    <a href="index.php"><img src="img/multitasking.png" alt="Logo"></a>
     <div class="title">
         <h1>Service à la personne</h1>
         <p>Vars (16) et alentours</p>

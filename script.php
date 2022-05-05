@@ -15,8 +15,10 @@ if(isset($_POST['submit'])) {
     $user_lastname = htmlspecialchars($_POST['user_lastname']);
     $user_firstname = htmlspecialchars($_POST['user_firstname']);
     $user_zip = htmlspecialchars($_POST['user_zip']);
+    $user_city = htmlspecialchars($_POST['user_city']);
     $user_mail = htmlspecialchars($_POST['user_mail']);
     $user_phone = htmlspecialchars($_POST['user_phone']);
+    $contact_time = htmlspecialchars($_POST['contact_time']);
     $user_message = htmlspecialchars($_POST['user_message']);
 
     $mailTo = "alexis.boucherie@gmail.com";
@@ -26,8 +28,10 @@ if(isset($_POST['submit'])) {
     "Nom : ".$user_lastname."\n".
     "Prénom : ".$user_firstname."\n".
     "Code Postal : ".$user_zip."\n".
+    "Ville : ".$user_city."\n\n".
     "Téléphone : ".$user_phone."\n".
-    "Adresse mail : ".$user_mail."\n\n".
+    "Adresse mail : ".$user_mail."\n".
+    "Disponibilité pour recontact : ".$user_contact."\n\n".
     "Message : ".$user_message
     ;
     

@@ -23,45 +23,55 @@
 
             <!-- services -->
             <div class="serv1 block" id="services">
-                <h2>Aide administrative</h2>
-                <img src="img/admin.png">
-                <ul>
-                    <li>Courrier et factures</li>
-                    <li>Démarches en ligne</li>
-                    <li>Retraîte, CAF, impôts, Pôle-Emploi...</li>
-                </ul>
+                <div class="align">
+                    <h2>Aide administrative</h2>
+                    <img src="img/admin.png">
+                    <ul>
+                        <li>Courrier et factures</li>
+                        <li>Démarches en ligne</li>
+                        <li>Retraîte, CAF, impôts, Pôle-Emploi...</li>
+                    </ul>
+                </div>
             </div>
             <div class="serv2 block">
-                <h2>Courses et repas</h2>
-                <img src="img/shopping-bag.png">
-                <ul>
-                    <li>Livraison à domicile</li>
-                    <li>Préparation des repas directement chez vous</li>
-                </ul>
+                <div class="align">
+                    <h2>Courses et repas</h2>
+                    <img src="img/shopping-bag.png">
+                    <ul>
+                        <li>Livraison à domicile</li>
+                        <li>Préparation des repas directement chez vous</li>
+                    </ul>
+                </div>
             </div>
             <div class="serv3 block">
-                <h2>Repassage</h2>
-                <img src="img/iron.png">
-                <ul>
-                    <li>Collecte de linge à domicile</li>
-                    <li>Livraison du linge repassé</li>
-                </ul>
+                <div class="align">
+                    <h2>Repassage</h2>
+                    <img src="img/iron.png">
+                    <ul>
+                        <li>Collecte de linge à domicile</li>
+                        <li>Livraison du linge repassé</li>
+                    </ul>
+                </div>
             </div>
             <div class="serv4 block">
-                <h2>Accompagnement</h2>
-                <img src="img/calendar.png">
-                <ul>
-                    <li>Accompagnement des personnes en situation d’invalidité temporaire
-                    <br>> RDV médicaux, coiffeur, courses...</li>
-                </ul>
+                <div class="align">
+                    <h2>Accompagnement</h2>
+                    <img src="img/calendar.png">
+                    <ul>
+                        <li>Accompagnement des personnes en situation d’invalidité temporaire
+                        <br>> RDV médicaux, coiffeur, courses...</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- crédit d'impôt -->
             <div class="credit">
-                <h2>Crédit d'impôt : services et emploi à domicile</h2>
-                <img src="img/creditdimpot.png" alt="Crédit d'impôt, -50% !">
-                <p>Bénéficiez d'un crédit d'impôt de 50% sur le montant de la facture.</p>
-                <p class="aster">>> Plus de renseignements sur le <a href="https://www.service-public.fr/particuliers/vosdroits/F12">site officiel du service public</a> (service-public.fr).</p>
+                <div class="align">
+                    <h2>Crédit d'impôt : service à la personne</h2>
+                    <img src="img/creditdimpot.png" alt="Crédit d'impôt, -50% !">
+                    <p>Bénéficiez d'un crédit d'impôt de 50% sur le montant de la facture.</p>
+                    <p class="aster">>> Plus de renseignements sur le <a href="https://www.service-public.fr/particuliers/vosdroits/F12">site officiel du service public</a> (service-public.fr).</p>
+                </div>
             </div>
 
             <!-- contacts -->
@@ -73,7 +83,7 @@
                 
                 <!-- formulaire de contact -->
                 <form action="script.php" method="post">
-                    <h2>Demandez votre devis :</h2>
+                    <h2>Besoin de mes services ? Une question ? Contactez-moi :</h2>
                     <div class="gender">
                         <p>Civilité</p>
                         <div class="radio">
@@ -98,12 +108,20 @@
                         <input type="text" id="zip" name="user_zip">
                     </div>
                     <div>
+                        <label for="city">Ville</label>
+                        <input type="text" id="city" name="user_city">
+                    </div>
+                    <div>
                         <label for="mail">Courriel</label>
                         <input type="email" id="mail" name="user_mail">
                     </div>
                     <div>
                         <label for="phone">Numéro de téléphone *</label>
                         <input type="text" id="phone" name="user_phone"> <!-- required -->
+                    </div>
+                    <div>
+                        <label for="contact-time">À quel moment préférez-vous que je vous recontacte ?</label>
+                        <input type="text" id="contact-time" name="contact_time">
                     </div>
                     <div>
                         <label for="msg">Votre message</label>

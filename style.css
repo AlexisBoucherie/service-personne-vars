@@ -45,6 +45,19 @@ main {
 
 .serv1, .serv2, .serv3, .serv4 {
     background-color: #fef2e4;
+
+}
+
+.serv1, .serv2, .serv3, .serv4, .credit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align {
+    display: block;
+    width: 100%;
+    height: fit-content;
 }
 
 .credit {
@@ -149,8 +162,8 @@ textarea {
 }
 
 .radio input {
-    width: 1em;
-    height: 1em;
+    min-width: 1em;
+    min-height: 1em;
 }
 
 .radio label {
@@ -288,7 +301,7 @@ footer {
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
         gap: 20px 20px;
         grid-template-areas:
         "serv1 credit"
@@ -323,7 +336,7 @@ footer {
 
     .container {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
         "serv1 serv2 contact"
         "serv3 serv4 contact"
