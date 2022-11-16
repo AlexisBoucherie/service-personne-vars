@@ -33,7 +33,7 @@ $services = $itemManager->listItems();
                     <p>20€ de l'heure, sur rendez-vous uniquement</p>
                     <span class=""></span>
                     <h2>Crédit d'impôt : service à la personne</h2>
-                    <img src="../../public/assets/img/creditdimpot.png" alt="Crédit d'impôt, -50% !">
+                    <img src="assets/img/creditdimpot.png" alt="Crédit d'impôt, -50% !">
                     <p>Bénéficiez d'un crédit d'impôt de 50% sur le montant de la facture.</p>
                     <p class="">
                         >> Plus de renseignements sur le
@@ -44,7 +44,7 @@ $services = $itemManager->listItems();
 
             <!-- contacts -->
             <div class="contact block" id="contacts">
-                <img src="../../public/assets/img/photoflorence.png" alt="Photo de Florence Poibleau">
+                <img src="assets/img/photoflorence.png" alt="Photo de Florence Poibleau">
                 <h2>Florence POIBLEAU</h2>
                 <a href="tel:+33638528307">06.38.52.83.07</a>
                 <span class="separator"></span>

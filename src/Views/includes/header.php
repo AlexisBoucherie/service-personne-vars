@@ -15,7 +15,7 @@
 
 <body>
 <header>
-    <a href="../index.php"><img src="../../../public/assets/img/multitasking.png" alt="Logo"></a>
+    <a href="../index.php"><img src="assets/img/multitasking.png" alt="Logo"></a>
     <div class="">
         <h1>Service à la personne</h1>
         <p>Vars (16) et alentours</p>
